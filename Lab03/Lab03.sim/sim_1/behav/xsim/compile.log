@@ -1,5 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sciencethebird/Desktop/DLab/Lab03/alu.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module alu
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Sciencethebird/Desktop/DLab/Lab03/alu_test_demo.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module alu_test
-INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [C:/Users/Sciencethebird/Desktop/DLab/Lab03/alu_test_demo.v:28]
