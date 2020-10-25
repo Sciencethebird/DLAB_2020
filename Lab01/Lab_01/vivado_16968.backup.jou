@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Oct  4 12:45:40 2020
+# Process ID: 16968
+# Current directory: C:/Users/Sciencethebird/Desktop/DLab/Lab01/Lab_01
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19184 C:\Users\Sciencethebird\Desktop\DLab\Lab01\Lab_01\Lab_01.xpr
+# Log file: C:/Users/Sciencethebird/Desktop/DLab/Lab01/Lab_01/vivado.log
+# Journal file: C:/Users/Sciencethebird/Desktop/DLab/Lab01/Lab_01\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Sciencethebird/Desktop/DLab/Lab01/Lab_01/Lab_01.xpr
+update_compile_order -fileset sources_1
