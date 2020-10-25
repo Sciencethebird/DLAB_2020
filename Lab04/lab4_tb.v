@@ -4,7 +4,7 @@ module lab4_tb;
 reg clk, reset;
 
 reg  [3:0] usr_btn;
-wire  [3:0] usr_led;
+wire  signed [3:0] usr_led;
 wire pwm_test;
 wire [3:0]duty_cycle_idx;
 wire l0, l1, l2, l3;
@@ -58,88 +58,108 @@ always #(`strobe/2) clk = ~clk;
         usr_btn = `INC_COUNTER; //counter = 7
         # `press_delay;
         RELEASE_BUTTON;      
-        usr_btn = `INC_COUNTER; //counter = 8
+        usr_btn = `INC_COUNTER; //counter = 7
         # `press_delay;
         RELEASE_BUTTON;        
-        usr_btn = `INC_COUNTER; //counter = 9
+        usr_btn = `DEC_COUNTER; //counter = 6
         # `press_delay;
         RELEASE_BUTTON;       
-        usr_btn = `INC_COUNTER; //counter = 10
+        usr_btn = `DEC_COUNTER; //counter = 5
         # `press_delay;
         RELEASE_BUTTON;       
-        usr_btn = `INC_COUNTER; //counter = 11
+        usr_btn = `DEC_COUNTER; //counter = 4
         # `press_delay;
         RELEASE_BUTTON;       
-        usr_btn = `INC_COUNTER; //counter = 12
+        usr_btn = `DEC_COUNTER; //counter = 3
         # `press_delay;
         RELEASE_BUTTON;
-        usr_btn = `INC_COUNTER; //counter = 13
+        usr_btn = `DEC_COUNTER; //counter = 2
         # `press_delay;
         RELEASE_BUTTON;
-         usr_btn = `INC_COUNTER; //counter = 14
+         usr_btn = `DEC_COUNTER; //counter = 1
         # `press_delay;
         RELEASE_BUTTON;
-        usr_btn = `INC_COUNTER; //counter = 15
-        # `press_delay;
-        RELEASE_BUTTON;
-        
-        usr_btn = `DEC_COUNTER; //counter = 14
+        usr_btn = `DEC_COUNTER; //counter = 0
         # `press_delay;
         RELEASE_BUTTON;
         
-        usr_btn = `DEC_COUNTER; //counter = 13
+        usr_btn = `DEC_COUNTER; //counter = -1
         # `press_delay;
         RELEASE_BUTTON;
         
-        usr_btn = `DEC_COUNTER; //counter = 12
+        usr_btn = `DEC_COUNTER; //counter = -2
         # `press_delay;
         RELEASE_BUTTON;
         
-        usr_btn = `DEC_COUNTER; //counter = 11
+        usr_btn = `DEC_COUNTER; //counter = -3
         # `press_delay;
         RELEASE_BUTTON;
         
-        usr_btn = `INC_COUNTER; //counter = 12
+        usr_btn = `DEC_COUNTER; //counter = -4
         # `press_delay;
         RELEASE_BUTTON;
         
-        usr_btn = `DEC_PWM; //counter = 12, pwm = 75
+        usr_btn = `DEC_COUNTER; //counter = -5
         # `press_delay;
         RELEASE_BUTTON;
         
-        usr_btn = `DEC_PWM; //counter = 12, pwm = 50
+        usr_btn = `DEC_COUNTER; //counter = -6
         # `press_delay;
         RELEASE_BUTTON;
         
-        usr_btn = `DEC_PWM; //counter = 12, pwm = 25
+        usr_btn = `DEC_COUNTER; //counter = -7
         # `press_delay;
         RELEASE_BUTTON;
         
-        usr_btn = `DEC_PWM; //counter = 12, pwm = 5
+        usr_btn = `DEC_COUNTER; //counter = -8
         # `press_delay;
         RELEASE_BUTTON;
         
-        usr_btn = `DEC_PWM;//counter = 12, pwm = 5
+        usr_btn = `DEC_COUNTER; //counter = -8
         # `press_delay;
         RELEASE_BUTTON;
         
-         usr_btn = `INC_PWM;//counter = 12, pwm = 25
+        usr_btn = `INC_COUNTER; //counter = -7
         # `press_delay;
         RELEASE_BUTTON;
         
-        usr_btn = `INC_PWM;//counter = 12, pwm = 50
+        usr_btn = `DEC_PWM; //counter = -7, pwm = 75
         # `press_delay;
         RELEASE_BUTTON;
         
-        usr_btn = `INC_COUNTER; //counter = 13
+        usr_btn = `DEC_PWM; //counter = -7, pwm = 50
         # `press_delay;
         RELEASE_BUTTON;
         
-        usr_btn = `INC_COUNTER; //counter = 14
+        usr_btn = `DEC_PWM; //counter = -7, pwm = 25
         # `press_delay;
         RELEASE_BUTTON;
         
-         usr_btn = `INC_PWM;//counter = 14, pwm = 75
+        usr_btn = `DEC_PWM; //counter = -7, pwm = 5
+        # `press_delay;
+        RELEASE_BUTTON;
+        
+        usr_btn = `DEC_PWM;//counter = -7, pwm = 5
+        # `press_delay;
+        RELEASE_BUTTON;
+        
+         usr_btn = `INC_PWM;//counter = -7, pwm = 25
+        # `press_delay;
+        RELEASE_BUTTON;
+        
+        usr_btn = `INC_PWM;//counter = -7, pwm = 50
+        # `press_delay;
+        RELEASE_BUTTON;
+        
+        usr_btn = `INC_COUNTER; //counter = -6
+        # `press_delay;
+        RELEASE_BUTTON;
+        
+        usr_btn = `INC_COUNTER; //counter = -5
+        # `press_delay;
+        RELEASE_BUTTON;
+        
+         usr_btn = `INC_PWM;//counter = -5, pwm = 75
         # `press_delay;
         RELEASE_BUTTON;
         # `rest;

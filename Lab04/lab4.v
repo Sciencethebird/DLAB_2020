@@ -12,10 +12,10 @@ module lab4(
 `define PWM_CYCLE_NUM 200 //200 *20ns = 4us
 `define DUTY_LEN 200*0.25
 
-//reg [3:0] usr_led;
+wire signed [3:0] usr_led;
 reg pwm_signal;
 reg led_pwm;
-reg [3:0] led_on;
+reg signed [3:0] led_on;
 
 reg BTN0_is_pressed = 0;
 reg BTN1_is_pressed = 0;
@@ -40,8 +40,8 @@ always @(posedge clk)begin
         if(usr_btn[0] && BTN0_db_counter == 0) begin
             $display("BTN0 pressed! decresing counter! %d", usr_btn);
             BTN0_is_pressed = 1;
-            if(led_on>0) led_on <= led_on - 1; 
-            else led_on <= 0;
+            if(led_on>-8) led_on <= led_on - 1; 
+            else led_on <= -8;
         end
         if(BTN0_is_pressed) BTN0_db_counter <= BTN0_db_counter + 1;
         if (BTN0_db_counter >`DEBOUNCE_COUNT)begin
@@ -56,7 +56,7 @@ always @(posedge clk)begin
         if(usr_btn[1] && BTN1_db_counter == 0) begin
             $display("BTN1 pressed! incresing counter! %d", usr_btn);
             BTN1_is_pressed = 1;
-            if(led_on>= 15)led_on <= 15;
+            if(led_on>= 7)led_on <= 7;
             else  led_on <= led_on + 1;
         end
         if(BTN1_is_pressed) BTN1_db_counter <= BTN1_db_counter + 1;
