@@ -1,0 +1,17 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              sys_clk_pin |              sys_clk_pin |                                                                                        ms_count_reg[31]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                        ms_count_reg[28]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                        ms_count_reg[27]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                        ms_count_reg[24]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                        ms_count_reg[23]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                        ms_count_reg[20]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                        ms_count_reg[19]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                        ms_count_reg[16]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                        ms_count_reg[15]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                         num_cvt_reg[28]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                        ms_count_reg[12]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                        ms_count_reg[11]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                         ms_count_reg[8]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

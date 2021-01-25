@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Dec  7 19:18:55 2020
+# Process ID: 8472
+# Current directory: C:/Users/Sciencethebird/Desktop/DLab/Lab09/Lab9_0511105/Lab9_0511105.runs/synth_1
+# Command line: vivado.exe -log lab9.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab9.tcl
+# Log file: C:/Users/Sciencethebird/Desktop/DLab/Lab09/Lab9_0511105/Lab9_0511105.runs/synth_1/lab9.vds
+# Journal file: C:/Users/Sciencethebird/Desktop/DLab/Lab09/Lab9_0511105/Lab9_0511105.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab9.tcl -notrace

@@ -1,0 +1,3 @@
+﻿  DLAB9_md5.cpp
+c:\users\sciencethebird\desktop\dlab\lab09\dlab9_md5\dlab9_md5.cpp(161): error C2660: 'strcpy_s': function does not take 2 arguments
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(28): note: see declaration of 'strcpy_s'
