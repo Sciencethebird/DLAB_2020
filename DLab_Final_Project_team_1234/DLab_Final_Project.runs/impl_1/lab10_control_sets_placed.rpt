@@ -1,0 +1,105 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon Jan 11 02:39:51 2021
+| Host         : DESKTOP-5MA8GOT running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab10_control_sets_placed.rpt
+| Design       : lab10
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    27 |
+|    Minimum number of control sets                        |    27 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   105 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    27 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              11 |            8 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              92 |           45 |
+| Yes          | No                    | No                     |             270 |           73 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             386 |          127 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+------------------------------+---------------------------------+------------------+----------------+--------------+
+|    Clock Signal   |         Enable Signal        |         Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+------------------------------+---------------------------------+------------------+----------------+--------------+
+|  clk_divider0/CLK |                              |                                 |                1 |              1 |         1.00 |
+|  clk_divider0/CLK |                              | lcd0/reset_n                    |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG    | score_num[3]_i_1_n_0         | lcd0/reset_n                    |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG    | snake_clock_x[31]_i_1_n_0    | snake_clock_x[29]_i_1_n_0       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG    | snake_clock_y[31]_i_1_n_0    | snake_clock_y[29]_i_1_n_0       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG    | head_x_movement0             | lcd0/reset_n                    |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG    | lcd0/icode[3]_i_1_n_0        |                                 |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG    | lcd0/tcode[3]_i_1_n_0        |                                 |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG    |                              | vs0/score_num_reg[2]_7          |                4 |              6 |         1.50 |
+|  clk_IBUF_BUFG    | row_B                        | lcd0/reset_n                    |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | row_B[126]_i_1_n_0           |                                 |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG    | snake_clock_x[31]_i_1_n_0    |                                 |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG    | snake_clock_y[31]_i_1_n_0    |                                 |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG    | lcd0/lcd_initialized_reg_n_0 | lcd0/reset_n                    |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG    |                              |                                 |                7 |             10 |         1.43 |
+|  clk_divider0/CLK | vs0/pixel_tick               | vs0/h_count_reg[9]_i_1_n_0      |                2 |             10 |         5.00 |
+|  clk_divider0/CLK | vs0/v_count_reg[9]_i_2_n_0   | vs0/v_count_reg[9]_i_1_n_0      |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG    | body_display_mask0           | lcd0/reset_n                    |                3 |             11 |         3.67 |
+|  clk_IBUF_BUFG    | vs0/pixel_tick               | vs0/SR[0]                       |                6 |             12 |         2.00 |
+|  clk_IBUF_BUFG    | snake_clock_x[21]_i_1_n_0    |                                 |                4 |             22 |         5.50 |
+|  clk_IBUF_BUFG    | snake_clock_y[21]_i_1_n_0    |                                 |                4 |             22 |         5.50 |
+|  clk_IBUF_BUFG    | lcd0/lcd_initialized_reg_n_0 | lcd0/text_count[0]_i_1_n_0      |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG    |                              | decrease_score_clock[0]_i_1_n_0 |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG    | lcd0/init_e_i_1_n_0          | lcd0/reset_n                    |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG    |                              | lcd0/reset_n                    |               32 |             58 |         1.81 |
+|  clk_IBUF_BUFG    | body_pos_y[999]_i_1_n_0      | lcd0/reset_n                    |               85 |            257 |         3.02 |
+|  clk_IBUF_BUFG    | body_pos_y[999]_i_1_n_0      |                                 |               53 |            400 |         7.55 |
++-------------------+------------------------------+---------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,393 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jan 11 02:37:07 2021
+# Process ID: 7928
+# Current directory: C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.runs/synth_1
+# Command line: vivado.exe -log lab10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab10.tcl
+# Log file: C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.runs/synth_1/lab10.vds
+# Journal file: C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab10.tcl -notrace
+Command: synth_design -top lab10 -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14240
+WARNING: [Synth 8-992] sram_addr is already implicitly declared earlier [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:86]
+WARNING: [Synth 8-992] data_in is already implicitly declared earlier [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:87]
+WARNING: [Synth 8-992] data_out is already implicitly declared earlier [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:88]
+WARNING: [Synth 8-992] sram_we is already implicitly declared earlier [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:89]
+WARNING: [Synth 8-992] sram_en is already implicitly declared earlier [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:89]
+WARNING: [Synth 8-992] sram_addr1 is already implicitly declared earlier [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:91]
+WARNING: [Synth 8-992] data_out1 is already implicitly declared earlier [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:92]
+WARNING: [Synth 8-992] row_A is already implicitly declared earlier [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:158]
+WARNING: [Synth 8-992] row_B is already implicitly declared earlier [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:159]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab10' [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:23]
+	Parameter STOP bound to: 2'b00 
+	Parameter RIGHT bound to: 2'b10 
+	Parameter LEFT bound to: 2'b01 
+	Parameter DOWN bound to: 2'b01 
+	Parameter UP bound to: 2'b10 
+	Parameter BLOCK_W bound to: 10 - type: integer 
+	Parameter BLOCK_H bound to: 10 - type: integer 
+	Parameter WALL_H bound to: 120 - type: integer 
+	Parameter WALL_W bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/vga_sync.v:19]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HB bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (1#1) [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/vga_sync.v:19]
+INFO: [Synth 8-6157] synthesizing module 'clk_divider' [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/clk_divider.v:21]
+	Parameter divider bound to: 2 - type: integer 
+	Parameter half_divider bound to: 1 - type: integer 
+	Parameter divider_minus_one bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (2#1) [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/clk_divider.v:21]
+INFO: [Synth 8-6157] synthesizing module 'LCD' [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/new/LCD.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'LCD' (3#1) [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/new/LCD.v:13]
+INFO: [Synth 8-6157] synthesizing module 'sram' [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/sram.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'images.mem' is read successfully [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/sram.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sram' (4#1) [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/sram.v:8]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:468]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:498]
+INFO: [Synth 8-6155] done synthesizing module 'lab10' (5#1) [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/sources_1/lab10.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1013.160 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/constrs_1/lab10.xdc]
+Finished Parsing XDC File [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/constrs_1/lab10.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.srcs/constrs_1/lab10.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab10_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1013.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 35    
+	   3 Input   12 Bit       Adders := 12    
+	   2 Input   11 Bit       Adders := 7     
+	   2 Input   10 Bit       Adders := 19    
+	   3 Input   10 Bit       Adders := 24    
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	             1000 Bit    Registers := 2     
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 15    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 12    
++---RAMs : 
+	               1K Bit	(100 X 12 bit)          RAMs := 1     
++---Muxes : 
+	   3 Input  128 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 1     
+	   3 Input  127 Bit        Muxes := 1     
+	   2 Input  126 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 10    
+	   5 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 5     
+	   5 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 2     
+	   3 Input   11 Bit        Muxes := 1     
+	   3 Input   10 Bit        Muxes := 2     
+	   4 Input   10 Bit        Muxes := 2     
+	   5 Input   10 Bit        Muxes := 2     
+	   6 Input   10 Bit        Muxes := 2     
+	   7 Input   10 Bit        Muxes := 2     
+	   8 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 13    
+	   4 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 2     
+	   5 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 1     
+	   7 Input    5 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	   4 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 13    
+	  13 Input    1 Bit        Muxes := 2     
+	  69 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP food_region2, operation Mode is: A*B.
+DSP Report: operator food_region2 is absorbed into DSP food_region2.
+DSP Report: Generating DSP food_region1, operation Mode is: PCIN+A*B.
+DSP Report: operator food_region1 is absorbed into DSP food_region1.
+DSP Report: operator food_region2 is absorbed into DSP food_region1.
+DSP Report: Generating DSP food_region2, operation Mode is: A*B.
+DSP Report: operator food_region2 is absorbed into DSP food_region2.
+DSP Report: Generating DSP food_region1, operation Mode is: PCIN+A*B.
+DSP Report: operator food_region1 is absorbed into DSP food_region1.
+DSP Report: operator food_region2 is absorbed into DSP food_region1.
+DSP Report: Generating DSP food_region2, operation Mode is: A*B.
+DSP Report: operator food_region2 is absorbed into DSP food_region2.
+DSP Report: Generating DSP food_region1, operation Mode is: PCIN+A*B.
+DSP Report: operator food_region1 is absorbed into DSP food_region1.
+DSP Report: operator food_region2 is absorbed into DSP food_region1.
+DSP Report: Generating DSP food_region2, operation Mode is: A*B.
+DSP Report: operator food_region2 is absorbed into DSP food_region2.
+DSP Report: Generating DSP food_region1, operation Mode is: PCIN+A*B.
+DSP Report: operator food_region1 is absorbed into DSP food_region1.
+DSP Report: operator food_region2 is absorbed into DSP food_region1.
+DSP Report: Generating DSP food_region2, operation Mode is: A*B.
+DSP Report: operator food_region2 is absorbed into DSP food_region2.
+DSP Report: Generating DSP food_region1, operation Mode is: PCIN+A*B.
+DSP Report: operator food_region1 is absorbed into DSP food_region1.
+DSP Report: operator food_region2 is absorbed into DSP food_region1.
+DSP Report: Generating DSP food_region2, operation Mode is: A*B.
+DSP Report: operator food_region2 is absorbed into DSP food_region2.
+DSP Report: Generating DSP food_region1, operation Mode is: PCIN+A*B.
+DSP Report: operator food_region1 is absorbed into DSP food_region1.
+DSP Report: operator food_region2 is absorbed into DSP food_region1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|lab10       | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | PCIN+A*B    | 10     | 10     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | PCIN+A*B    | 10     | 10     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | PCIN+A*B    | 10     | 10     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | PCIN+A*B    | 10     | 10     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | PCIN+A*B    | 10     | 10     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab10       | PCIN+A*B    | 10     | 10     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1013.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 1170.695 ; gain = 157.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1180.758 ; gain = 167.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 1180.758 ; gain = 167.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 1180.758 ; gain = 167.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 1180.758 ; gain = 167.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 1180.758 ; gain = 167.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 1180.758 ; gain = 167.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 1180.758 ; gain = 167.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|lab10       | body_pos_y_reg[909] | 8      | 10    | YES          | NO                 | YES               | 10     | 0       | 
+|lab10       | body_pos_y_reg[809] | 10     | 86    | YES          | NO                 | YES               | 86     | 0       | 
+|lab10       | body_pos_y_reg[17]  | 9      | 4     | YES          | NO                 | YES               | 4      | 0       | 
+|lab10       | body_pos_x_reg[909] | 8      | 10    | YES          | NO                 | YES               | 10     | 0       | 
+|lab10       | body_pos_x_reg[809] | 10     | 86    | YES          | NO                 | YES               | 86     | 0       | 
+|lab10       | body_pos_x_reg[17]  | 9      | 4     | YES          | NO                 | YES               | 4      | 0       | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   363|
+|3     |DSP48E1 |    12|
+|4     |LUT1    |   132|
+|5     |LUT2    |   522|
+|6     |LUT3    |   385|
+|7     |LUT4    |   391|
+|8     |LUT5    |   234|
+|9     |LUT6    |   565|
+|10    |MUXF7   |     7|
+|11    |MUXF8   |     1|
+|12    |SRL16E  |   200|
+|13    |FDRE    |   667|
+|14    |FDSE    |    92|
+|15    |IBUF    |     6|
+|16    |OBUF    |    25|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 1180.758 ; gain = 167.598
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 1180.758 ; gain = 167.598
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1180.758 ; gain = 167.598
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1180.758 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 383 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1180.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:29 . Memory (MB): peak = 1180.758 ; gain = 167.598
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.runs/synth_1/lab10.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab10_utilization_synth.rpt -pb lab10_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 11 02:38:40 2021...

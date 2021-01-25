@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jan 11 00:24:46 2021
+# Process ID: 4504
+# Current directory: C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10300 C:\Users\Sciencethebird\Desktop\DLab_Final_Project_2\DLab_Final_Project.xpr
+# Log file: C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/vivado.log
+# Journal file: C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Sciencethebird/Desktop/DLab_Final_Project_2/DLab_Final_Project.xpr
+update_compile_order -fileset sources_1
